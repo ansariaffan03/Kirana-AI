@@ -5,6 +5,8 @@ from routers.transactions import router as transactions_router
 from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
 from core.config import APP_NAME, APP_VERSION
+from fastapi.middleware.cors import CORSMiddleware
+
 
 app = FastAPI(
     title=APP_NAME,
